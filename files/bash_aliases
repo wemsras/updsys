@@ -1,0 +1,2 @@
+alias cda='cd ~/ansible'
+alias hg='history | grep '
