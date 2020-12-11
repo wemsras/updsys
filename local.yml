@@ -1,0 +1,18 @@
+---
+
+- hosts: all
+
+  tasks:
+    - name: "Installiere Softwarepakete"
+      package:
+        state: present      
+        name:      
+          - htop
+          - vim
+          - curl
+          - wget
+          - sudo
+
+
+...
+
