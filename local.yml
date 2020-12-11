@@ -15,12 +15,13 @@
           - wget
           - sudo
           - neofetch
+          - tmux
 
     - name: "Kopiere .bash_aliases"
       copy:
         src: files/bash_aliases
         dest: /home/wolfgang/.bash_aliases
-        user: wolfgang
+        owner: wolfgang
         group: wolfgang
         mode: u=rw,g=r,o=r
 
