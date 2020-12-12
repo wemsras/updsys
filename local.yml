@@ -16,6 +16,7 @@
           - sudo
           - neofetch
           - tmux
+          - zerofree
 
     - name: "Kopiere .bash_aliases"
       copy:
@@ -24,6 +25,14 @@
         owner: wolfgang
         group: wolfgang
         mode: u=rw,g=r,o=r
+
+    - name: "Kopiere sudoers.d/wolfgang"
+      copy:
+        src: files/sudoers_wolfgang
+        dest: /etc/sudoers.d/wolfgang
+        owner: root
+        group: root
+        mode: u=r,g=r
 
 
 
