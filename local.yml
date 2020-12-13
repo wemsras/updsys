@@ -17,6 +17,13 @@
           - neofetch
           - tmux
           - zerofree
+          - synaptic
+          - dconf
+          - ubuntu-restricted-extras
+          - clementine
+          - gnome-sushi
+          - leafpad
+            
 
     - name: "Kopiere .bash_aliases"
       copy:
