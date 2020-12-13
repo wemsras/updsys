@@ -22,7 +22,7 @@
           - ubuntu-restricted-extras
           - clementine
           - gnome-sushi
-          - leafpad
+          # - leafpad/mousepad
             
 
     - name: "Kopiere .bash_aliases"
