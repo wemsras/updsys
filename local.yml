@@ -32,7 +32,8 @@
           - clementine
           - gnome-sushi
           - mousepad # leafpad
-      when: ansible_distribution == "Ubuntu"
+      when: ansible_distribution == "xxxxx"
+      #when: ansible_distribution == "Ubuntu" and workstation is set
 
     - name: "Benutzer wolfgang anlegen"
       user:
