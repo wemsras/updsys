@@ -19,6 +19,7 @@
           - zerofree
           - net-tools
           - finger
+          - fail2ban
       when: ansible_distribution in ["Debian", "Ubuntu"]
 
     - name: "Installiere Softwarepakete Ubuntu"
@@ -30,7 +31,7 @@
           - ubuntu-restricted-extras
           - clementine
           - gnome-sushi
-          # - leafpad/mousepad
+          - mousepad # leafpad
       when: ansible_distribution == "Ubuntu"
 
     - name: "Benutzer wolfgang anlegen"
