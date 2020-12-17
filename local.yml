@@ -17,6 +17,8 @@
           - neofetch
           - tmux
           - zerofree
+          - net-tools
+          - finger
       when: ansible_distribution in ["Debian", "Ubuntu"]
 
     - name: "Installiere Softwarepakete Ubuntu"
