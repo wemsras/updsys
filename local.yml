@@ -59,7 +59,12 @@
         group: root
         mode: u=r,g=r,o-rwx
 
+    - name: "Installiere Check-MK Agent"
+      apt:
+        deb: http://lzsrv.nsupdate.info/wemsras/agents/check-mk-agent_1.6.0p19-1_all.deb
+      when: ansible_distribution in ["Debian", "Ubuntu"]
 
+ 
 
 ...
 
