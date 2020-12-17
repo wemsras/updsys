@@ -39,6 +39,7 @@
       user:
         name: wolfgang
         state: present
+        groups: sudo
         comment: "Wolfgang"
         shell: /bin/bash            
 
