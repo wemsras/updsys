@@ -17,13 +17,26 @@
           - neofetch
           - tmux
           - zerofree
+        when: ansible_distribution in ["Debian", "Ubuntu"]
+
+    - name: "Installiere Softwarepakete Ubuntu"
+      package:
+        state: present      
+        name: 
           - synaptic
           - dconf-editor
           - ubuntu-restricted-extras
           - clementine
           - gnome-sushi
           # - leafpad/mousepad
-            
+        when: ansible_distribution == "Ubuntu"
+
+    - name: "Benutzer wolfgang anlegen"
+      user:
+        name: wolfgang
+        state: present
+        comment: "Wolfgang"
+        shell: /bin/bash            
 
     - name: "Kopiere .bash_aliases"
       copy:
