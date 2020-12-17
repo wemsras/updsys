@@ -17,7 +17,7 @@
           - neofetch
           - tmux
           - zerofree
-        when: ansible_distribution in ["Debian", "Ubuntu"]
+      when: ansible_distribution in ["Debian", "Ubuntu"]
 
     - name: "Installiere Softwarepakete Ubuntu"
       package:
@@ -29,7 +29,7 @@
           - clementine
           - gnome-sushi
           # - leafpad/mousepad
-        when: ansible_distribution == "Ubuntu"
+      when: ansible_distribution == "Ubuntu"
 
     - name: "Benutzer wolfgang anlegen"
       user:
